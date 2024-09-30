@@ -1,0 +1,247 @@
+
+
+*{
+    margin: 0;padding: 0;list-style: none;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tagline{
+    text-align: center;
+    padding: 10px;
+    background: #960000;
+    color: #fff;
+    width: 100%;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:#ffffff;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 17px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin-left: 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #960000;
+    text-decoration: underline;
+    transition: 0.3s ease-in-out;
+}
+
+/* Mobile menu styles */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+ .icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; gap: 1rem;
+ }
+ .icon i{
+    font-size: 19px;
+ }
+
+ /* section 2  */
+ .second{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    align-items: center; text-align: center;
+    /* background: #f70000; */
+    margin-top: 1rem;
+ }
+ .second div{
+    cursor: pointer;
+ }
+
+.hero{
+    width: 100%;
+    padding-top: 2rem;
+}
+ /* section 3 */
+.menu{
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+    gap:50px;
+    margin: 70px 0px;
+}
+.menu .tag{
+    align-self: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.grid{
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    'I1 I1 I2 I3'
+    'I1 I1 I2 I4'
+    ;
+} 
+.item1{
+grid-area: I1;
+
+
+}
+.item1 img{ object-fit: cover;
+}
+.item2 img{
+    /* padding-top: 14rem; */
+}
+.item1 img{
+    /* padding-top: 10rem; */
+}
+.item2{
+    /* padding-top: 10rem; */
+     border-radius: 20px;
+grid-area: I2;
+
+}
+.item3{
+    /* background: #2f8fcf; */
+grid-area: I3;
+border-radius: 20px;
+
+}
+.item4{
+    /* background: #6952ad; */
+grid-area: I4;border-radius: 20px;
+
+}
+ /* section 4 */
+
+.main-4{
+    /* background: #000; */
+    padding-top: 4rem;
+    width: 80%; margin: auto;
+}
+.main-fourt{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap :20px;  
+    /* overflow-x: scroll; */
+    /* background: #000; */
+}
+.main-4 h1{
+    font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.card{
+    /* padding:  0rem 3rem; */
+    width: 280px;
+    height: 400px;
+    overflow: hidden;
+    /* background-color: #960000;  */
+    padding: 10px;
+    /* border: 1px solid black; */
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.card img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}  
+.card  p{
+    margin-top: 20px;
+}
+.price{
+    text-align: center;
+}
+.card button{
+    margin-top: 20px;
+    width: 100%;
+    /* border-radius: 20px; */
+    /* background: ; */
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-size: 7;
+    background-color: #960000;
+position: absolute;
+right: 0px;
+text-align: center;
+bottom: 5px;}
+
+
+/* sectiobn 5 */
+
+.five{
+    padding-top: 5rem;width: 100%;
+}
+.five h1{
+    text-align: center;
+}
+.scroller {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+}
+
+.scroll-content { 
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll 10s linear infinite;
+}
+
+.scroll-content span {
+    padding: 0 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
